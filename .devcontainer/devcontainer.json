@@ -1,0 +1,16 @@
+{
+    "name": "Go lang",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/work",
+    "settings": {
+      "eslint.workingDirectories": [
+        { "mode": "auto" }
+      ]
+    },
+    "extensions": [
+		"dbaeumer.vscode-eslint",
+		"mhutchie.git-graph"
+	],
+	"remoteUser": "root"
+}

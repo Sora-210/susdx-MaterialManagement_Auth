@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  dev:
+    build: .
+    command: sleep infinity
+    working_dir: /working_dir
+    volumes:
+      - ../:/work
+      - ~/.ssh:/root/.ssh
+  db:
+    image: mariadb:10.3
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
